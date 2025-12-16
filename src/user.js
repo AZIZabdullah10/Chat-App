@@ -28,8 +28,10 @@ const getUsersInRoom = (room) => {
     return users.filter(user => user.room.trim().toLowerCase() === room)
 }
 
-const totalUsers = () => {
-    return users.length
+const totalUsers = (room) => {
+    room = room.trim().toLowerCase()
+    const totalUser = users.filter(user => user.room.trim().toLowerCase() === room)
+    return totalUser.length
 }
 
 const removeUser = (id) => {
