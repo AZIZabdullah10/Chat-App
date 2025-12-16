@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  overflow: hidden;
+}
+
+body {
+  background: #F7F5F3;
+}
+
+form {
+  width: 450px;
+  height: 500px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+form div {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+form h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+.input {
+  align-self: center;
+  width: 300px;
+  height: 30px;
+  margin: 5px;
+  border: 1px solid transparent;
+  background: #F7F5F3;
+  outline: none;
+  padding: 5px;
+  text-align: center;
+  transition: 0.6s ease;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+input[type=submit] {
+  width: 100px;
+  padding: 8px;
+  background: none;
+  color: #007bff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin: 20px;
+  transition: 0.8s ease;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  color: white;
+  background: #007bff;
+  border: 1px solid #007bff;
+}
+
+@media (max-width: 470px) {
+  form {
+    width: 400px;
+  }
+  .input {
+    margin-left: 45px;
+  }
+  .input:hover {
+    margin-left: 10px;
+  }
+  input[type=submit] {
+    margin-left: 150px;
+  }
+}
+@media (max-width: 414px) {
+  form {
+    width: 350px;
+  }
+  .input {
+    margin-left: 55px;
+    width: 200px;
+  }
+  .input:hover {
+    margin-left: 10px;
+    width: 300px;
+  }
+  input[type=submit] {
+    margin-left: 120px;
+  }
+}
+@media (max-width: 360px) {
+  form {
+    width: 300px;
+  }
+  .input {
+    margin-left: 55px;
+    width: 150px;
+  }
+  .input:hover {
+    margin-left: 10px;
+    width: 250px;
+  }
+  input[type=submit] {
+    margin-left: 100px;
+  }
+}/*# sourceMappingURL=index.css.map */

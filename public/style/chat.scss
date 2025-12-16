@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  overflow: hidden;
+}
+
+#main-contant {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.nav {
+    width: 100%;
+    border-bottom: .5px solid rgba(0, 0, 0, 0.352);
+    height: 50px;
+    background: #F7F5F3;
+    h2 {
+        margin-top: 5px;
+        text-align: center;
+    }
+}
+
+
+.side-chat {
+  float: left;
+  border: 1px solid transparent;
+  width: 30%;
+  height: 100%;
+  border: .5px solid rgba(0, 0, 0, 0.352);
+  background: rgb(255, 255, 255);
+  transition: 0.8s ease;
+  z-index: 5;
+}
+
+#main-chat {
+  float: right;
+  border: .5px solid rgba(0, 0, 0, 0.352);
+  background: #F7F5F3;
+  width: 70%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  #main-chat-contant {
+    height: 90%;
+  }
+}
+
+#msg {
+  width: 100%;
+  height: 90%;
+  margin: 0;
+  overflow-y: scroll;
+  padding-top: 10px;
+}
+
+
+#chat-contant {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px  rgba(0, 0, 0, 0.1);
+  width: 80%;
+  span{
+    color: #18D2A3;
+  }
+}
+
+#sidebar-template{
+  width: 90%;
+  height: 95%;
+  margin: 10px;
+}
+
+.sidebar-div{
+  margin-top: 30px;
+  background: #F6F5F4;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  h1{
+    position: relative;
+    top: 15%;
+    left: 30%;
+    color: #A6B439;
+}
+}
+
+#form-section {
+  width: 100%;
+}
+
+.inputTxt {
+  box-shadow: 3px 3px  rgba(0, 0, 0, 0.1);
+  width: 85%;
+  padding: 15px;
+  padding-left: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.submit {
+  padding: 15px;
+  margin-left: 10px;
+  background: none;
+  color: #007bff;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: 0.8s ease;
+  cursor: pointer;
+}
+
+#chat-contant p:nth-child(1) span:nth-child(2) {
+  font-size: small;
+  margin-left: 30px;
+}
+
+#chat-contant p:nth-child(1) span:nth-child(1) {
+  font-weight: bold;
+}
+
+.userlist{
+    // display: flex;
+  justify-content: center; 
+  align-items: center;  
+  margin-top: 30px;
+  background: #F6F5F4;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  h3{
+        color: #A6B439;
+  }
+} 
